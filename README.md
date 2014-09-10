@@ -1,6 +1,6 @@
 # ofxLeapMotion2
 
-ofxLeapMotion2 is an OpenFrameworks addon for the second version of the LeapMotion SDK supporting skeleton tracking (2.0.1). It is tested on Mac OSX, and should support Linux and Windows as well.
+ofxLeapMotion2 is an OpenFrameworks addon for the second version of the LeapMotion SDK supporting skeleton tracking (beta 2.1). It is tested on Mac OSX, and should support Linux and Windows as well.
 
 It is based on [Theo Watson's original ofxLeapMotion addon](https://github.com/ofTheo/ofxLeapMotion).
 
