@@ -1,13 +1,5 @@
 #include "ofApp.h"
 
-/* Note on OS X, you must have this in the Run Script Build Phase of your project.
- where the first path ../../../addons/ofxLeapMotion2/ is the path to the ofxLeapMotion addon.
- 
- cp -f ../../../addons/ofxLeapMotion2/libs/lib/osx/libLeap.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libLeap.dylib"; install_name_tool -change ./libLeap.dylib @executable_path/libLeap.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME";
- 
- If you don't have this you'll see an error in the console: dyld: Library not loaded: @loader_path/libLeap.dylib
- */
-
 //--------------------------------------------------------------
 
 
