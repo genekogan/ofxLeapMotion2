@@ -68,7 +68,7 @@ cp -f ../../../addons/ofxLeapMotion2/libs/lib/osx/libLeap.dylib "$TARGET_BUILD_D
 
 ### Linux ( command line )
 
-Simply add `ofxLeapMotion2` to the `addons.make` file of your project. Remember that `make RunDebug` or `make RunRelease` or `make run` won't work if you don't have exported the `OF_ROOT` path. Executing with `./bin/youirappname` will always work.
+Simply add `ofxLeapMotion2` to the `addons.make` file of your project. Remember that `make RunDebug` or `make RunRelease` or `make run` won't work if you don't have exported the `OF_ROOT` path. Executing with `./bin/yourappname` will always work.
 
 
 ## Developing ofxLeapMotion
