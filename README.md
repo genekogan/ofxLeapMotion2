@@ -40,6 +40,10 @@ Then after renaming:
 
 Rename the project in Xcode (do not rename the .xcodeproj file in Finder!): Slow double click the project name and rename (Xcode4)
 
+### Linux ( command line )
+
+You can simply navigate to the project folder and use `make Debug`, `make Release` or `make` and then execute with `./bin/example` .
+If you have exported the `OF_ROOT` path you can also use `make RunDebug` or `make RunRelease` or `make run` ( othewise you will get an error on execution as it won't find the path of the linked .so )
 
 ### Adding ofxLeapMotion to an Existing Project
 
@@ -62,6 +66,9 @@ cp -f ../../../addons/ofxLeapMotion2/libs/lib/osx/libLeap.dylib "$TARGET_BUILD_D
 
    If you don't have this you'll see an error in the console: dyld: Library not loaded: @loader_path/libLeap.dylib
 
+### Linux ( command line )
+
+Simply add `ofxLeapMotion2` to the `addons.make` file of your project. Remember that `make RunDebug` or `make RunRelease` or `make run` won't work if you don't have exported the `OF_ROOT` path. Executing with `./bin/youirappname` will always work.
 
 
 ## Developing ofxLeapMotion
