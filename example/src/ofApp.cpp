@@ -11,6 +11,9 @@ void ofApp::setup(){
     
 	leap.open();
     
+    // keep app receiving data from leap motion even when it's in the background
+    leap.setReceiveBackgroundFrames(true);
+    
 	cam.setOrientation(ofPoint(-20, 0, 0));
     
 	glEnable(GL_DEPTH_TEST);
