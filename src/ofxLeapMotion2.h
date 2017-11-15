@@ -24,6 +24,7 @@ public:
     ofPoint handPos;
     ofPoint handNormal;
     ofPoint direction;
+    ofPoint wristPos;
     float pitch, yaw, roll;
     bool isLeft;
     
@@ -291,6 +292,7 @@ public:
             curHand.handPos     = getMappedofPoint( leapHands[i].palmPosition() );
             curHand.handNormal  = getofPoint( leapHands[i].palmNormal() );
             curHand.direction   = getofPoint( leapHands[i].direction() );
+            curHand.wristPos    = getMappedofPoint( leapHands[i].wristPosition() );
             
             curHand.yaw         = leapHands[i].direction().yaw();
             curHand.roll        = leapHands[i].palmNormal().roll();
