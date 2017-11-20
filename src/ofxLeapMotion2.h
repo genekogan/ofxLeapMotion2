@@ -270,7 +270,7 @@ public:
     vector <Hand> getLeapHands(){
 		
         vector <Hand> handsCopy;
-        if( ourMutex.tryLock(2000) ){
+        if( ourMutex.try_lock() ){
             handsCopy = hands;
             ourMutex.unlock();
         }
@@ -434,7 +434,7 @@ protected:
     // TODO: added for Gesture support - JRW
     Leap::Frame lastFrame;
     
-    Poco::FastMutex ourMutex;
+    std::mutex ourMutex;
 };
 
 
